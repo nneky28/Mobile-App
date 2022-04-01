@@ -31,7 +31,7 @@ export default function HomeListHeader({companies=[]}) {
             style={{
               backgroundColor: "#fff",
               borderRadius: 15,
-              padding: 25,
+              padding: 20,
               paddingLeft: 45,
               fontSize: 15,
             }}
@@ -60,12 +60,13 @@ export default function HomeListHeader({companies=[]}) {
       <ScrollView horizontal>
         {companies.map((items, index) => (
           <CompanyCard
+          key={index}
           {...items}
            />
         ))}
       </ScrollView>
 
-      <Text style={{ color: "#333", fontWeight: "600" , marginVertical:30}}>
+      <Text style={{ color: "#333", fontWeight: "600" , marginTop: 40 }}>
         Recent Jobs
       </Text>
     </View>

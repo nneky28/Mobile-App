@@ -100,11 +100,11 @@ export default function JobDetail({ navigation, route }) {
 
           <View style={{ marginTop: 20 }}>
             <Text style={{ fontWeight: "700" }}>About the Opportunity</Text>
-            <Text style={{ color: "#000", fontSize: 12, fontWeight: "500", marginVertical: 10 }}>Calendly is a Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti excepturi aspernatur odio dignissimos voluptate voluptatibus nam,
-               repellat quos libero delectus.</Text>
+            <Text style={{ color: "#000", fontSize: 12, fontWeight: "500", marginVertical: 10 }}>calendly is looking for a UI/UX Designer in marketing to join our fast growing team. This role will report to the Director
+             of UX and work alongside the marketing team to design experiences that help grow our business.</Text>
           </View>
 
-          <View style={{ marginTop: 20 }}>
+          <View style={{ marginTop: 10 }}>
             <Text style={{ fontWeight: "700" }}>Job Responsibilities</Text>
            <View  
             style={{
@@ -113,14 +113,28 @@ export default function JobDetail({ navigation, route }) {
                   alignItems: "center",
                 }}>
 
-            <View style={{ flexDirection: "row",alignItems:"flex-start", marginBottom:25 }}>
+            <View style={{ flexDirection: "row",alignItems:"flex-start",marginBottom:5}}>
             <Entypo name="dot-single" size={18} color="#000" />
-            <Text>One place with the best jobs companies tech. 
-              Apply to all of them with a signle profile and get in touch with hiring managers directly.</Text>
+            <Text >Collaborate with a cross-functional team to develop
+               thorough and thoughtful design solutions that are beautiful and pixel-perfect.</Text>
             </View>
-            <Text>Hello </Text>
-
            </View>
+
+           <View  
+            style={{
+                  flexDirection: "row",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}>
+
+            <View style={{ flexDirection: "row",alignItems:"flex-start",marginBottom:25}}>
+            <Entypo name="dot-single" size={18} color="#000" />
+            <Text >Create visualizations, site maps, user flows, 
+              wireframes, low-to high-fidelity mockups, and protypes; and iterate on design basis.</Text>
+            </View>
+           </View>
+
+
           </View>
         </View>
       </ScrollView>

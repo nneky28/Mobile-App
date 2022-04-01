@@ -2,8 +2,6 @@ import { View } from "react-native";
 import React,{useState, useEffect} from "react";
 import { Entypo } from "@expo/vector-icons";
 import {
-  Platform,
-  NativeModules,
   Text,
   TouchableHighlight,
   FlatList,
@@ -28,10 +26,10 @@ function HomeScreen({ navigation }) {
     }
     
     
-  
   useEffect(() => {
     getCompanies();
   }, [])
+  
   return (
     <View style={{ flex: 1, backgroundColor: "#eee" }}>
       <AppBar />
@@ -41,10 +39,7 @@ function HomeScreen({ navigation }) {
         keyExtractor={(item, index) => index}
         ListHeaderComponent={<HomeListHeader 
             companies={companies}
-           
            />}
-
-           
 
         ItemSeparatorComponent={() => <View style={{ paddingVertical: 10 }} />}
         
